@@ -10,7 +10,7 @@ function calcular(conta) {
   } else if (conta == "*") {
     result = v1 * v2;
   } else if (conta == "/") {
-    result = v1 / v2;
+    result = v2 != 0 ? v1 / v2 : "Erro";
   }
 
   document.getElementById("resultado").value = result;
